@@ -149,15 +149,81 @@ footer {
     padding: 15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 10px;
-  }
-  @media(max-width:768px){
-    .intro, .section {
-        padding: 20px;
-        
+    .navbar {
+        padding: 15px 20px;
     }
+
+    .nav-links a {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .section,
+    .intro {
+        padding: 30px 20px;
+    }
+
+    .sticky-notice {
+        top: 70px;
+    }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        display: block;
+    }
+
+   
+
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+   
+    .section,
+    .intro {
+        padding: 20px 15px;
+    }
+
+
+
+   
+    .card-container,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        text-align: left;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
